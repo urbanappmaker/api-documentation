@@ -1,0 +1,15 @@
+# Site settings
+title: Urban App Documentation
+email: admin@urbanappmaker.com
+description: >
+  Official documentation of the Urban App API
+baseurl: ""
+url: http://docs.urbanappmaker.com
+timezone: America/Denver
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+  sass_dir: _sass
+  style: :compressed
