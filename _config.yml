@@ -1,21 +1,27 @@
 # Site settings
-title: Urban App Documentation
+title: Urban App Makers
 email: admin@urbanappmaker.com
 description: >
-  Official documentation of the Urban App API
+  Official documentation for Urban App
 baseurl: ""
 url: http://docs.urbanappmaker.com
 timezone: America/Denver
 
+images:
+    logo: /images/logo.svg
+
 # Build settings
+collections:
+    api:
+        output: true
+source: src
 markdown: kramdown
 permalink: pretty
 sass:
   sass_dir: _sass
   style: :compressed
-exclude: ['Gemfile', 'Gemfile.lock','CNAME']
 
 # Plugin
 
 gems:
-  - jekyll-sitemap
+- jekyll-sitemap

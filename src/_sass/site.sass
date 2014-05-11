@@ -1,0 +1,46 @@
+=headingType
+    font-family: $headingFont
+    font-weight: 400
+    
+=thinType
+    font-family: $thinFont
+    font-weight: 100
+        
+=bodyType
+    font-family: $bodyFont
+    font-weight: 400
+    
+=optimizeLegibility
+    text-rendering: optimizeLegibility    
+    -webkit-font-smoothing: antialiased
+
+a,div,p,span
+    +bodyType
+
+a
+    text-decoration: none
+    color: lighten($secondary, 10%)
+    
+h1,h2,h3,h4,h5,h6
+    +headingType
+    
+h1
+    font-size: 16pt
+h2 
+    font-size: 14pt
+    
+.text-center
+    text-align: center
+    
+.brand
+    +headingType
+    text-transform: uppercase
+    padding: 0.1em
+    margin-right: 2em
+    img
+        vertical-align: middle
+        height: 40px
+        padding-bottom: 5px
+        margin-right: 0.2em   
+    &:hover
+        text-decoration: none
